@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:textAppearance="?attr/textAppearanceListItem">
+
+    <item android:title="Home"
+        android:id="@+id/homeIcon"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:title="Message"
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+
+    <item android:title="Help Line"
+        android:id="@+id/helpLine"
+        android:icon="@drawable/ic_baseline_alternate_email_24"/>
+
+    <item android:title="Bus Route"
+        android:id="@+id/busRoute"
+        android:icon="@drawable/ic_baseline_directions_bus_24"/>
+
+    <item android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+    <item android:title="Rate Us"
+        android:id="@+id/rateUs"
+        android:icon="@drawable/ic_baseline_rate_review_24"/>
+
+    <item android:title="About Us"
+        android:id="@+id/aboutUs"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24" />
+
+</menu>

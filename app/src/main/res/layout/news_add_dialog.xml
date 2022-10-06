@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.251">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="10dp"
+                    android:id="@+id/NewsScreenTitle"
+                    android:text="Add New News"
+                    android:textColor="@color/light_black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:id="@+id/newsUploadArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NewsScreenTitle">
+
+                    <ImageView
+                        android:id="@+id/uploadImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@color/grey" />
+
+                    <ImageView
+                        android:id="@+id/btnAddImg"
+                        android:layout_width="30dp"
+                        android:layout_height="29dp"
+                        android:layout_alignStart="@+id/uploadImg"
+                        android:layout_alignTop="@+id/uploadImg"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginTop="78dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/newsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:hint="Title"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/newsUploadArea" />
+
+                <EditText
+                    android:id="@+id/theNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:hint="News"
+                    android:inputType="textMultiLine"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/newsTitle" />
+
+
+                <Button
+                    android:id="@+id/btnSubmitNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Add"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/theNews"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="@+id/theNews"
+                    app:layout_constraintTop_toBottomOf="@+id/theNews"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

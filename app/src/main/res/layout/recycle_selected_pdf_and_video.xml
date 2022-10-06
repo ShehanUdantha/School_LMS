@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fileIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:src="@drawable/pdf" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/fileIcon">
+
+                <TextView
+                    android:id="@+id/personName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Name:"
+                    android:textColor="@color/lightBluePro"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/uploadFileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Full Name"
+                    android:textColor="@color/lightBluePro"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/fileIcon"
+                app:layout_constraintTop_toBottomOf="@+id/linear1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Date:"
+                    android:textColor="@color/lightBluePro"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/uploadFileDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="date and time"
+                    android:textColor="@color/lightBluePro"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2"
+                android:layout_toEndOf="@+id/fileIcon"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+                <TextView
+                    android:id="@+id/tapText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tap to view submissions"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btnPDFDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    app:tint="@color/red"></ImageView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

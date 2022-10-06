@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.251">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/quizScreenTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:padding="10dp"
+                    android:text="Add New Quiz"
+                    android:textColor="@color/light_black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.042"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:id="@+id/qTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Question"
+                    android:inputType="textMultiLine"
+                    android:padding="7dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/ql1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/qTitle"
+                    app:layout_constraintStart_toStartOf="@+id/qTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/qTitle">
+
+                    <TextView
+                        android:id="@+id/qA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a."
+                        android:textSize="16sp"
+                        android:textColor="@color/light_black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginVertical="12dp"/>
+
+                    <EditText
+                        android:id="@+id/answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_input"
+                        android:ems="10"
+                        android:hint="First Answer"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ql2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ql1"
+                    app:layout_constraintStart_toStartOf="@+id/ql1"
+                    app:layout_constraintTop_toBottomOf="@+id/ql1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b."
+                        android:textSize="16sp"
+                        android:textColor="@color/light_black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginVertical="12dp"/>
+
+                    <EditText
+                        android:id="@+id/answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_input"
+                        android:ems="10"
+                        android:hint="Second Answer"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ql3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ql2"
+                    app:layout_constraintStart_toStartOf="@+id/ql2"
+                    app:layout_constraintTop_toBottomOf="@+id/ql2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="c."
+                        android:textSize="16sp"
+                        android:textColor="@color/light_black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginVertical="12dp"/>
+
+                    <EditText
+                        android:id="@+id/answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_input"
+                        android:ems="10"
+                        android:hint="Third Answer"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ql4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ql3"
+                    app:layout_constraintStart_toStartOf="@+id/ql3"
+                    app:layout_constraintTop_toBottomOf="@+id/ql3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="d."
+                        android:textSize="16sp"
+                        android:textColor="@color/light_black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginVertical="12dp"/>
+
+                    <EditText
+                        android:id="@+id/answer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_input"
+                        android:ems="10"
+                        android:hint="Fourth Answer"
+                        android:inputType="textPersonName"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ql5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/ql4"
+                    app:layout_constraintStart_toStartOf="@+id/ql4"
+                    app:layout_constraintTop_toBottomOf="@+id/ql4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type correct answer letter:"
+                        android:textSize="16sp"
+                        android:textColor="@color/light_black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginVertical="12dp"/>
+
+                    <EditText
+                        android:id="@+id/correctAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/custom_input"
+                        android:ems="10"
+                        android:hint="a or b or c or d"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textCapCharacters"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ql6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/ql5"
+                    app:layout_constraintStart_toStartOf="@+id/ql5"
+                    app:layout_constraintTop_toBottomOf="@+id/ql5">
+
+                    <Button
+                        android:id="@+id/btnSubmitQuiz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:text="Add"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

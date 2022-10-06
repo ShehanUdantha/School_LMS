@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Materials"
+            android:textSize="22sp"
+            android:textColor="@color/light_black"
+            android:padding="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/notesCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"
+                android:text="Notes"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notes"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/lessonsCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="20dp"
+                android:text="Lessons"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lessons"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/assignmentCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="20dp"
+                android:text="Assignments"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/assignments"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/quizCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quiz"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/lec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="20dp"
+                android:text="Quizzes"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/gradeCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="20dp"
+                android:text="Grades"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/grades"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/white"
+        android:gravity="center" />
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:gravity="center">
+
+        <bitmap
+            android:src="@drawable/title"
+            android:gravity="fill_horizontal|fill_vertical"/>
+    </item>
+</layer-list>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="15dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/lightBluePro">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/index_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Null"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Null"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/first_Name"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Null"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/second_Name"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

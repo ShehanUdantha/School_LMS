@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/title"></ImageView>
+
+
+            <EditText
+                android:id="@+id/editFirstName2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <EditText
+                android:id="@+id/editLastName2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editFirstName2"
+                app:layout_constraintStart_toStartOf="@+id/editFirstName2"
+                app:layout_constraintTop_toBottomOf="@+id/editFirstName2" />
+
+            <EditText
+                android:id="@+id/editEmail2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editLastName2"
+                app:layout_constraintStart_toStartOf="@+id/editLastName2"
+                app:layout_constraintTop_toBottomOf="@+id/editLastName2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:hint="Role"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                app:layout_constraintEnd_toEndOf="@+id/editEmail2"
+                app:layout_constraintStart_toStartOf="@+id/editEmail2"
+                app:layout_constraintTop_toBottomOf="@+id/editEmail2">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/filledSpinner"
+                    android:inputType="none"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColorHint="@color/darkerGrey"
+                    android:textSize="14sp"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/editIndexNo2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Index No"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintStart_toStartOf="@+id/spinner"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerBatch"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                app:layout_constraintEnd_toEndOf="@+id/editIndexNo2"
+                app:layout_constraintStart_toStartOf="@+id/editIndexNo2"
+                app:layout_constraintTop_toBottomOf="@+id/editIndexNo2">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/filledSpinnerBatch"
+                    android:inputType="none"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:hint="Batch"
+                    android:textColorHint="@color/darkerGrey"
+                    android:textSize="14sp"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/editPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Password (Min 6)"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerBatch"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/spinnerBatch"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerBatch" />
+
+            <EditText
+                android:id="@+id/confPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editPassword2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editPassword2"
+                app:layout_constraintTop_toBottomOf="@+id/editPassword2" />
+
+            <Button
+                android:id="@+id/btnSubmit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/confPassword2"
+                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintStart_toStartOf="@+id/confPassword2"
+                app:layout_constraintTop_toBottomOf="@+id/confPassword2"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

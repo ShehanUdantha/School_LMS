@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileAddPicture"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <ImageView
+                android:id="@+id/btnAddEdit"
+                android:layout_width="30dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="112dp"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/profileAddPicture"
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="visible"/>
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:hint="First Name"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                app:layout_constraintEnd_toEndOf="@+id/profileAddPicture"
+                app:layout_constraintStart_toStartOf="@+id/profileAddPicture"
+                app:layout_constraintTop_toBottomOf="@+id/profileAddPicture" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:hint="Last Name"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/editFirstName"
+                app:layout_constraintStart_toStartOf="@+id/editFirstName"
+                app:layout_constraintTop_toBottomOf="@+id/editFirstName" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/editLastName"
+                app:layout_constraintStart_toStartOf="@+id/editLastName"
+                app:layout_constraintTop_toBottomOf="@+id/editLastName" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editRole"
+                android:hint="Role"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                app:layout_constraintEnd_toEndOf="@+id/editEmail"
+                app:layout_constraintStart_toStartOf="@+id/editEmail"
+                app:layout_constraintTop_toBottomOf="@+id/editEmail">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/roleSpinner"
+                    android:inputType="none"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColorHint="@color/darkerGrey"
+                    android:textSize="14sp"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/editIndexNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:hint="Index No"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/editRole"
+                app:layout_constraintStart_toStartOf="@+id/editRole"
+                app:layout_constraintTop_toBottomOf="@+id/editRole" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editBatch"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                app:layout_constraintEnd_toEndOf="@+id/editIndexNo"
+                app:layout_constraintStart_toStartOf="@+id/editIndexNo"
+                app:layout_constraintTop_toBottomOf="@+id/editIndexNo">
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/filledSpinnerBatch"
+                    android:inputType="none"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:hint="Batch"
+                    android:textColorHint="@color/darkerGrey"
+                    android:textSize="14sp"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Password (Min 6)"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/editBatch"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editBatch"
+                app:layout_constraintTop_toBottomOf="@+id/editBatch"
+                android:visibility="visible"/>
+
+            <EditText
+                android:id="@+id/ConPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/custom_input"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/editPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editPassword"
+                app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/editIndexNo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/editIndexNo"
+                app:layout_constraintTop_toBottomOf="@+id/ConPassword"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UniversityITSchool</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="open_menu">open</string>
+    <string name="close_menu">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

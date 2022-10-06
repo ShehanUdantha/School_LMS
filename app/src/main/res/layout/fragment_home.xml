@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Categories"
+            android:textSize="22sp"
+            android:textColor="@color/light_black"
+            android:padding="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/userCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Users"
+                android:textColor="@color/light_black"
+                android:textSize="26sp"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peoples"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/moduleCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modules"
+                android:textColor="@color/light_black"
+                android:textSize="26sp"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/moodules"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/materialCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lec"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:id="@+id/lec"
+                android:padding="25dp"
+                android:text="Materials"
+                android:textColor="@color/light_black"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/eventsCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"
+                android:text="Events"
+                android:textColor="@color/light_black"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/newsCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Feed"
+                android:textColor="@color/light_black"
+                android:textSize="26sp"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/news"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/paymentCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payments"
+                android:textColor="@color/light_black"
+                android:textSize="26sp"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/payment"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

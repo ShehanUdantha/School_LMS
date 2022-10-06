@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moduleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Lessons"
+            android:textSize="22sp"
+            android:textColor="@color/light_black"
+            android:padding="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/pdfCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"
+                android:text="PDF"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pdf" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/videoFilesCard"
+            android:background="@drawable/toolbar"
+            android:elevation="4dp"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="25dp"
+                android:text="VIDEO FILES"
+                android:textColor="@color/light_black"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/video_icon" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

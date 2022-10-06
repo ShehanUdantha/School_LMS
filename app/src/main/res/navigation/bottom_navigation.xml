@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_n"
+    app:startDestination="@id/b_home">
+
+    <fragment
+        android:id="@+id/b_home"
+        android:name="com.firstprog.universityitschool.Student.Fragment.Stu_Home_Fragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_stu_home" />
+
+    <fragment
+        android:id="@+id/b_chat"
+        android:name="com.firstprog.universityitschool.Student.Fragment.Stu_Chat_Fragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_stu_chat" />
+
+</navigation>
